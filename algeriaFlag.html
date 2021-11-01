@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Algeria Flag</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="left-side"></div>
+      <div class="moon"></div>
+      <i class="star"></i>
+      <div class="right-side"></div>
+      <div class="clearfix"></div>
+    </div>
+
+    <style type="text/css">
+      body {
+        background-color: #dedede;
+      }
+      .clearfix {
+        clear: both;
+      }
+      .container {
+        position: relative;
+        width: 300px;
+        height: 160px;
+      }
+      .left-side {
+        background-color: #037b3e;
+        width: 50%;
+        height: 100%;
+        float: left;
+      }
+      .right-side {
+        background-color: #fff;
+        width: 50%;
+        height: 100%;
+        float: right;
+      }
+      .moon {
+        position: absolute;
+        display: block;
+        margin-top: 25px;
+        margin-left: 18px;
+        width: 130px;
+        height: 110px;
+        background-color: transparent;
+        box-shadow: inset -17px 0px 0px 8px #c8202f;
+        border-radius: 100%;
+        transform: rotate(180deg);
+        left: 80px;
+      }
+      .star {
+        position: absolute;
+        display: inline-block;
+        width: 0;
+        height: 0;
+        margin-left: 0.8em;
+        margin-right: 0.9em;
+        margin-bottom: 1.2em;
+        border-right: 0.3em solid transparent;
+        border-bottom: 0.7em solid #c8202f;
+        border-left: 0.3em solid transparent;
+        font-size: 28px;
+        top: 52px;
+        transform: rotate(20deg);
+      }
+      .star:before, .star:after {
+        content: "";
+        display: block;
+        width: 0;
+        height: 0;
+        position: absolute;
+        top: 0.6em;
+        left: -1em;
+        border-right: 1em solid transparent;
+        border-bottom: 0.7em solid #c8202f;
+        border-left: 1em solid transparent;
+        transform: rotate(-35deg);
+      }
+      .star:after {
+        transform: rotate(35deg);
+      }
+    </style>
+  </body>
+</html>
